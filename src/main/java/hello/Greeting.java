@@ -12,6 +12,8 @@ public class Greeting {
 
     public long getId() {
         return id;//TODO: Add new line
+		return id;//TODO: hello
+		
     }
 
     public String getContent() {
