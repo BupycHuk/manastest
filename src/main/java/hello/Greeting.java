@@ -3,7 +3,7 @@ package hello;
 public class Greeting {
 
     private final long id;
-    private final String content;//text
+    private final String content;//Add new Doc
 
     public Greeting(long id, String content) {
         this.id = id;
