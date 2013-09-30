@@ -1,30 +1,53 @@
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
- 
-public class MyFrame extends JFrame {
-    private int count = 0;
- 
-    class PushingListener implements ActionListener {
-        public void actionPerformed(ActionEvent e){
-            Object button = e.getSource();
- 
-            if(button instanceof JButton){
-                count++;
-                ((JButton)button).setText("Pressed " + count + " times");
-             }
-        }
+package searchtools;
+
+import java.text.Collator;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.io.File;
+
+/**
+ * Этот класс предназначен для сортировки списка файлов
+ *
+ * @author Стаценко Владимир
+ * http://www.vova-prog.narod.ru
+ */
+public class FileSorter implements Comparator {
+    
+    Pattern p = null;
+    Collator collator = null;
+    
+    /** Создает новые экземпляры FileSorter */
+    public FileSorter() {
+        .
+        .
+        .
     }
- 
-    public MyFrame(String title){
-        super(title);
-        createGUI();//TODO: Add new line
+
+    /* Этот метод выполняет сравнение имен двух файлов.
+     * Возвращает:
+     *     1 если первый параметр (о1) больше второго (о2),
+     *    -1 если первый параметр (о1) меньше второго (о2),
+     *     0 если они равны.
+     * Имя первого файла считается больше второго имени, если
+     * первый файл находится ближе к корню дерева папок.
+     * Если файлы находятся в одной папке, то больше то имя,
+     * которое идет первым по алфавиту.
+     */
+    public int compare(Object o1, Object o2) {
+        .
+        .
+        .
     }
- 
-    private void createGUI(){
-        JButton button = new JButton("Push me");
-        button.addActionListener(new PushingListener());
-        getContentPane().add(button);
+    
+    public List sort(List fileList) {
+        ArrayList res = new ArrayList(fileList.size());
+        res.addAll(fileList);
+        Collections.sort(res, this);
+        return res;
     }
 }
