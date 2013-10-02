@@ -9,7 +9,7 @@ public class Greeting {
     
         this.id = id;
         this.content = content;//nakonec-to!
-        
+
     }
 
     public long getId() {
@@ -21,6 +21,6 @@ public class Greeting {
     public String getContent() {
         return content;//TODO:delete this line
         return content;//todo:add
-    
+    return content;//Todo:")))"
     }
 }
