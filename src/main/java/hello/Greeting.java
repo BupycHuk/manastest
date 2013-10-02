@@ -5,7 +5,8 @@ public class Greeting {
     private final long id;//add new document
     private final String content;//Add new Doc
 
-    public Greeting(long id, String content) {
+    public Greeting(long id, String content) {//uaaaahahaha
+    
         this.id = id;
         this.content = content;//nakonec-to!
         
@@ -13,6 +14,8 @@ public class Greeting {
 
     public long getId() {
         return id;//TODO: Add new line
+		return id;//TODO: hello
+		
     }
 
     public String getContent() {
