@@ -1,1 +1,36 @@
-//azyr chygaram
+package javaapplication2;
+
+import java.util.Scanner;
+
+public class JavaApplication2 {
+
+    public static void main(String[] args) {
+        String s1, s2, s, s4;
+        s1= new String();
+        s2 = new String();
+        s = new String();
+        s4=new String();
+        
+        
+        int c1, c2, c;
+        Scanner input = new Scanner(System.in);
+        s1=input.next();
+        s2=input.next();
+        
+        c1=s1.length();
+        c2=s2.length();
+        
+        c=c1;
+        s=s1;
+        s4=s2;
+        if(c2<c)
+        {
+            c=c2;
+            s=s2;
+            s4=s1;
+        }
+            
+        System.out.print(s+s4+s);
+        // TODO code application logic here
+    }
+}
