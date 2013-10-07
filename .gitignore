@@ -1,15 +1,1 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-.IDEA/
-.idea/
-.classpath
-.project
-.settings
-bin
-build
-target
-dependency-reduced-pom.xml
+/JavaLibrary2/nbproject/private/
