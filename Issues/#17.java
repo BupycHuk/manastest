@@ -57,7 +57,7 @@ public class Issue_17
         sap = input.nextLine();
         x=sap.length();
         if(sap.charAt(x-1)!='.')
-                System.out.println("Сиз киргизген саптын аягында чекит жок! кайра киргизиниз");
+            System.out.println("Сиз киргизген саптын аягында чекит жок! кайра киргизиниз");
         }
         while(sap.charAt(x-1)!='.');
         object.setStr(sap);
