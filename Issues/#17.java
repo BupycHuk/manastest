@@ -17,7 +17,8 @@ class Vowels
     
     public void searchVowels()
     {
-        for(int i=0;i<size;i++)
+		int i=0;
+        while(str.charAt(i)!='.')
         {
             char ch  =str.charAt(i);
             switch(ch)
@@ -33,6 +34,7 @@ class Vowels
                 case 'u': result+=ch;break;
                 case 'e': result+=ch;break;
             }
+			i++;
         }
     }
     public void sortStr()
@@ -50,7 +52,14 @@ public class Issue_17
         String sap;
         Vowels object = new Vowels();
         Scanner input = new Scanner(System.in);
+		int x;
+        do{
         sap = input.nextLine();
+        x=sap.length();
+        if(sap.charAt(x-1)!='.')
+                System.out.println("Сиз киргизген саптын аягында чекит жок! кайра киргизиниз");
+        }
+        while(sap.charAt(x-1)!='.');
         object.setStr(sap);
         object.searchVowels();
         object.sortStr();
