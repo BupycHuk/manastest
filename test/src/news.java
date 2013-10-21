@@ -13,7 +13,7 @@ public class news {
         Scanner input = new Scanner(System.in);
         int n, m;
         String s1 = "love", s2="nolove";
-        System.out.println("Сан киргиз:");
+        System.out.println("Сандарды  киргиз:");
         n = input.nextInt();
         m = input.nextInt();
         if(n == 6 || m == 6 || n - m == 6 || m - n == 6){
