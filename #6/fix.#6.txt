@@ -1,0 +1,22 @@
+package fix;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Akim
+ */
+public class Fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
+     String str = new String();
+     str = input.next();
+     System.out.println("Hello, "+str);
+    // TODO code application logic here
+    }
+    
+}
